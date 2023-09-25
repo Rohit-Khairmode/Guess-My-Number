@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Guess my number is small and fun game in which user play with the computer and try to guess secret number as early as possible "
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Guess My Number!</title>
+  </head>
+  <body>
+    <div class="back-col"></div>
+    <div class="container">
+      <header>
+        <h1>Guess My Number!</h1>
+        <p class="between">(Between 1 and 20)</p>
+        <button class="btn again">Again!</button>
+        <div class="number">?</div>
+      </header>
+      <main>
+        <section class="left">
+          <input type="number" class="guess" />
+          <button class="btn check">Check!</button>
+        </section>
+        <section class="right">
+          <p class="message">Start guessing...</p>
+          <p class="label-score">💯 Score: <span class="score">20</span></p>
+          <p class="label-highscore">
+            🥇 Highscore: <span class="highscore">0</span>
+          </p>
+        </section>
+      </main>
+    </div>
+    <section class="modal">
+      <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      <div>
+        Try to guess my number <br />I will help you by telling that you are
+        guess is lower than my number or higher<br />
+      </div>
+    </section>
+
+    <section class="win-modal modal hide">
+      <ion-icon name="close-outline" class="close-iconW close-icon"></ion-icon>
+      <div class="win-message">
+        You guessed correct 🎉 now try guess more<br />
+        quickly and break your own highscore
+      </div>
+    </section>
+    <div class="overlay hide"></div>
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
