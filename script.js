@@ -9,7 +9,6 @@ const displayMessage = function (message) {
 
 document.querySelector(".check").addEventListener("click", function () {
   const guess = Number(document.querySelector(".guess").value);
-  // console.log(guess);
 
   if (!guess) {
     displayMessage("⛔ Please enter a number ");
@@ -47,7 +46,6 @@ document.querySelector(".close-icon").addEventListener("click", function () {
   document.querySelector(".back-col").classList.add("hide");
 });
 document.querySelector(".close-iconW").addEventListener("click", function () {
-  console.log(highScore);
   if (highScore === 20) {
     location.reload();
   }
